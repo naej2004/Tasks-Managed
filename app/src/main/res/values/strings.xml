@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Gestionnaire de tâches</string>
+    <string name="goodMessage">All tasks completed</string>
+    <string name="appreciation">Nice work!</string>
 </resources>

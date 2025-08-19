@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -43,22 +44,22 @@ fun TaskCompleted(modifier: Modifier = Modifier) {
 
     Column(
         modifier = modifier
-            .fillMaxSize(), // Prend tout l'espace disponible
-        verticalArrangement = Arrangement.Center, // Centre verticalement
-        horizontalAlignment = Alignment.CenterHorizontally // Centre horizontalement
+            .fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Image(
             painter = image,
             contentDescription = null
         )
         Text(
-            text = "All tasks completed",
+            text = stringResource(R.string.goodMessage),
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(top = 24.dp, bottom = 8.dp)
         )
         Text(
-            text = "Nice work!",
+            text = stringResource(R.string.appreciation),
             fontSize = 16.sp
         )
     }
